@@ -1,0 +1,1092 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(/assets/fonts/Montserrat-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url(/assets/fonts/proximanova_regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat";
+}
+
+.carousel-inner {
+  background: rgb(212, 233, 249);
+  height: 60px;
+}
+
+.carousel-info {
+  gap: 10px;
+}
+
+.carousel-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.carousel-item img {
+  padding: 10px 0 10px 0;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/assets/vector1.png);
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(/assets/vector2.png);
+  width: 20px;
+  height: 20px;
+}
+
+.first-menu {
+  font-family: "ProximaNova";
+  max-width: 100vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  height: 50px;
+  background: rgb(247, 235, 229);
+}
+
+.first-menu__mobile-logo {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile__shoping-cart {
+  display: none;
+}
+
+.tablet-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tablet-menu a {
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.tablet-menu a:hover {
+  background-color: #f4f4f4;
+}
+
+.left-menu {
+  display: flex;
+  gap: 15px;
+}
+.left-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.79);
+}
+
+.right-menu {
+  display: flex;
+  gap: 15px;
+}
+.right-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.79);
+}
+
+.right-menu-items {
+  box-sizing: content-box;
+  height: 24px;
+}
+
+.second-menu {
+  max-width: 100vw;
+  padding-top: 10px;
+  padding-left: 8vw;
+  padding-right: 7vw;
+  gap: 15px;
+}
+.second-menu p {
+  margin: 0;
+}
+.second-menu a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(43, 20, 20);
+  word-break: break-all;
+}
+
+.second-menu__discount-icon {
+  width: 20px;
+  height: 20px;
+}
+
+main {
+  background: rgb(247, 247, 247);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main__left-part img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main__right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main__right-part__shop-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.main__right-part__line-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.main__right-part__line-text::before,
+.main__right-part__line-text::after {
+  content: "";
+  flex: 0 0 30px;
+  height: 2px;
+  background-color: black;
+}
+
+.main__right-part__line-text::before {
+  margin-right: 10px;
+}
+
+.main__right-part__line-text::after {
+  margin-left: 10px;
+}
+
+.main__right-part__shop-slogan {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.main__right-part__shop-info {
+  font-size: 18px;
+  text-align: center;
+}
+
+.second-screen {
+  padding: 0 10vw 50px 10vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.second-screen__ready-sets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  background: linear-gradient(to bottom right, rgba(255, 219, 195, 0.7) 50%, rgb(255, 219, 195) 50%);
+}
+
+.second-screen__make-your-own-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  background: linear-gradient(to bottom left, rgba(255, 194, 204, 0.7) 50%, rgb(255, 194, 204) 50%);
+}
+
+.second-screen__personal-print-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  background: linear-gradient(to top right, rgba(180, 234, 179, 0.7) 50%, rgb(180, 234, 179) 50%);
+}
+
+.second-screen__wedding-sets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  background: linear-gradient(to top left, rgba(253, 213, 205, 0.5) 50%, rgb(253, 213, 205) 50%);
+}
+
+.second-screen__corporate-sets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  background: linear-gradient(to bottom right, rgba(168, 220, 223, 0.7) 50%, rgb(168, 220, 223) 50%);
+}
+
+.second-screen__wholesale-sets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  background: linear-gradient(to bottom left, rgba(196, 198, 236, 0.7) 50%, rgb(196, 198, 236) 50%);
+}
+
+.second-screen__img {
+  padding-top: 5%;
+}
+
+.second-screen__sets-link {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.second-screen h3 {
+  text-align: center;
+  color: rgb(41, 41, 41);
+  font-size: 16px;
+  padding-bottom: 35px;
+}
+
+.promotion {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.promotion-mobile {
+  display: none;
+}
+
+.third-screen {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 10vw 0px 10vw;
+}
+
+.third-screen__img-background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.third-screen__item p {
+  height: 110px;
+  background-color: rgb(255, 77, 109);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+}
+
+.third-screen__item__blue p {
+  background-color: rgb(140, 196, 236);
+}
+
+.third-screen__item {
+  position: relative;
+}
+
+.third-screen__label {
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
+.fourth-screen {
+  padding: 50px 10vw 0 10vw;
+}
+
+.fourth-screen h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.fourth-screen__dotted-line {
+  position: absolute;
+  border-top: 2px dotted rgb(210, 210, 210);
+  width: 85%;
+  top: 25px;
+  left: 10%;
+}
+
+.fourth-screen__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.fourth-screen__item {
+  position: relative;
+  flex: 1;
+  justify-items: center;
+}
+
+.fourth-screen__item img {
+  height: 50px;
+}
+
+.fourth-screen__birthday-hat {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+}
+
+.fourth-screen__item p {
+  text-align: center;
+  padding: 5%;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.fifth-screen {
+  padding: 50px 10vw 0 10vw;
+}
+
+.fifth-screen__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.fifth-screen__wrapper__item__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.fifth-screen__wrapper__item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 21px 0 21px;
+}
+
+.fifth-screen__wrapper__item-description {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  padding-top: 10px;
+  color: rgb(41, 41, 41);
+  padding: 0 21px 0 21px;
+}
+
+.add-to-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 21px 18px 21px;
+}
+
+.add-to-cart__price {
+  color: rgb(231, 66, 106);
+  font-weight: 600;
+}
+
+.add-to-cart__btn {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background: transparent;
+  align-items: center;
+}
+
+.add-to-cart__btn:hover {
+  background-color: rgb(231, 66, 106);
+  border-radius: 10px;
+}
+
+.add-to-cart__btn span {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.add-to-cart__btn img {
+  align-self: center;
+}
+
+.fifth-screen h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.all-sets-link {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.all-sets-link button {
+  font-size: 14px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border: 1px solid rgb(78, 157, 211);
+  border-radius: 3px;
+  height: 52px;
+  width: 293px;
+}
+
+.six-screen {
+  padding: 50px 10vw 0 10vw;
+}
+
+.six-screen h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.six-screen__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.six-screen__wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.six-screen__wrapper__item-data {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.six-screen__wrapper__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.six-screen__wrapper__item-descrtiption {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.six-screen__all-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.six-screen__all-news__btn {
+  font-size: 14px;
+  font-weight: 600;
+  box-sizing: border-box;
+  border: 1px solid rgb(78, 157, 211);
+  border-radius: 3px;
+  height: 52px;
+  width: 293px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.six-screen__all-news__btn p {
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(235, 237, 238);
+  padding: 50px 10vw 0 10vw;
+  font-family: "ProximaNova";
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 1.5fr 1.5fr 2.5fr;
+  row-gap: 10px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__info {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.footer__catalog {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.footer__for-business {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.footer__phone {
+  font-family: "ProximaNova";
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  justify-self: end;
+}
+
+[class^=footer__img-description] {
+  font-family: "ProximaNova";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  grid-row: 2/5;
+}
+
+[class^=footer-img] {
+  justify-self: center;
+}
+
+.footer__info__about {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__catalog__desserts {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__for-business__corporate-presents {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__working-hours {
+  font-weight: 14px;
+  justify-self: end;
+}
+
+.footer__info__garantees {
+  grid-column: 4/5;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__catalog__ready-sets {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__for-business__for-LLC {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__info__about-delivery {
+  grid-column: 4/5;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__catalog__make-your-own {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__for-business__wholesale {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__address {
+  grid-column: 1/4;
+  font-family: "ProximaNova";
+  font-size: 12px;
+  color: rgba(41, 41, 41, 0.7);
+}
+
+.footer__info__contacts {
+  grid-column: 4/5;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__catalog__promo {
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
+.footer__SMM {
+  grid-column: 7/8;
+  justify-self: end;
+}
+
+.footer__SMM a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .smm {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  .tablet-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  .tablet-menu.active {
+    display: flex !important;
+  }
+  .close-tablet-menu {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .left-menu {
+    display: none;
+  }
+  .second-menu a {
+    font-size: 11px;
+  }
+  .second-menu {
+    gap: 10px;
+    justify-content: space-between !important;
+  }
+  .second-menu__logo {
+    display: none;
+  }
+  .main__left-part img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 150%;
+  }
+  .main__right-part__shop-slogan {
+    text-align: center;
+  }
+  .second-screen {
+    grid-template-columns: 1fr;
+  }
+  .second-screen h3 {
+    padding-bottom: 5px;
+  }
+  .second-screen__img {
+    padding-top: 2%;
+  }
+  .fifth-screen__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .six-screen__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-wrapper {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr 1.5fr 1.5fr 1fr;
+  }
+  .footer__info {
+    font-size: 14px;
+  }
+  .footer__catalog {
+    font-size: 14px;
+  }
+  .footer__for-business {
+    font-size: 14px;
+  }
+  .footer__phone {
+    font-size: 14px;
+  }
+  .footer__SMM {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -o-object-fit: contain;
+       object-fit: contain;
+    gap: 3px;
+  }
+}
+@media screen and (max-width: 799px) {
+  #topSlider {
+    display: none;
+  }
+  .first-menu {
+    height: 60px;
+  }
+  .burger-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger-line-mobile {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+  }
+  .mobile-menu.active {
+    display: flex !important;
+  }
+  .close-mobile-menu {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .left-menu {
+    display: none !important;
+  }
+  .right-menu {
+    display: none !important;
+  }
+  .second-menu {
+    display: none !important;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    font-family: "ProximaNova";
+    font-size: 14px;
+    color: rgb(43, 20, 20);
+    margin: 2px;
+  }
+  .mobile-menu__sweet-days p {
+    margin-bottom: 2px;
+  }
+  .mobile-menu__sweet-days {
+    gap: 5px;
+  }
+  .mobile-menu__discount-icon {
+    height: 24px;
+  }
+  .mobile-menu a:hover {
+    background-color: #f4f4f4;
+  }
+  .first-menu__mobile-logo {
+    display: flex;
+  }
+  .mobile__shoping-cart {
+    display: flex;
+  }
+  main {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .main__right-part {
+    grid-row: 1/2;
+    max-width: 100vw;
+    padding-top: 65px;
+  }
+  .main__right-part p {
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+  .main__right-part__shop-name {
+    font-size: 18px;
+  }
+  .main__right-part__line-text,
+  .main__right-part__shop-info {
+    font-size: 14px;
+  }
+  .main__right-part__shop-slogan {
+    font-size: 24px;
+  }
+  .main__left-part {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .main__left-part img {
+    width: 130%;
+  }
+  .second-screen {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .second-screen__img {
+    display: none;
+  }
+  .second-screen__ready-sets,
+  .second-screen__make-your-own-set,
+  .second-screen__personal-print-set,
+  .second-screen__wedding-sets,
+  .second-screen__corporate-sets,
+  .second-screen__wholesale-sets {
+    background: none;
+  }
+  .second-screen__sets-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(41, 41, 41, 0.16);
+    font-size: 14px;
+  }
+  .second-screen h3 {
+    display: none;
+  }
+  .third-screen {
+    display: none;
+  }
+  .promotion-mobile__img {
+    width: 100%;
+    padding: 0 5% 0 5%;
+  }
+  .promotion-mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .promotion-mobile__title,
+  .promotion-mobile__description {
+    position: absolute;
+    color: white;
+  }
+  .promotion-mobile__title {
+    top: 73%;
+    font-family: "ProximaNova";
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .promotion-mobile__description {
+    top: 80%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .fourth-screen__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-screen__item__desktop {
+    display: none;
+  }
+  .fourth-screen__dotted-line {
+    display: none;
+  }
+  .fifth-screen__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .fifth-screen__wrapper__item h3 {
+    font-size: 12px;
+  }
+  .fifth-screen__wrapper__item-description {
+    font-size: 10px;
+  }
+  .add-to-cart__price {
+    font-size: 14px;
+  }
+  .add-to-cart__btn span {
+    display: none;
+  }
+  .all-sets-link button {
+    font-size: 12px;
+  }
+  .six-screen__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .six-screen__wrapper-hide-in-mobile {
+    display: none;
+  }
+  .six-screen__wrapper__item-data {
+    font-size: 10px;
+    padding-top: 5px;
+    margin: 0;
+  }
+  .six-screen__wrapper__item-title {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin: 0;
+  }
+  .six-screen__wrapper__item-descrtiption {
+    font-size: 10px;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  .six-screen__all-news__btn {
+    font-size: 12px;
+  }
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 10px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .footer-img2 {
+    grid-row: 2/3;
+  }
+  .footer-img3 {
+    grid-row: 3/4;
+  }
+  .footer__img-description1 {
+    grid-row: 1/2;
+    grid-column: 2/4;
+    justify-self: start;
+    align-self: center;
+    margin: 0;
+  }
+  .footer__img-description2 {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    justify-self: start;
+    align-self: center;
+    margin: 0;
+  }
+  .footer__img-description3 {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    justify-self: start;
+    align-self: center;
+    margin: 0;
+    text-align: start;
+  }
+  .footer__address {
+    grid-row: 4/6;
+    grid-column: 1/3;
+    font-size: 10px;
+    margin: 0;
+  }
+  .footer__phone {
+    grid-column: 3/4;
+    font-size: 12px;
+  }
+  .footer__SMM {
+    grid-row: 6/7;
+    grid-column: 1/4;
+    justify-self: center;
+  }
+  .footer__working-hours {
+    font-size: 10px;
+  }
+  .footer__info,
+  .footer__catalog,
+  .footer__for-business,
+  .footer__info__about,
+  .footer__catalog__desserts,
+  .footer__for-business__corporate-presents,
+  .footer__info__garantees,
+  .footer__catalog__ready-sets,
+  .footer__for-business__for-LLC,
+  .footer__info__about-delivery,
+  .footer__catalog__make-your-own,
+  .footer__for-business__wholesale,
+  .footer__info__contacts,
+  .footer__catalog__promo {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

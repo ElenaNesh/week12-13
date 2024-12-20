@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Macaron Shop</title>
+</head>
+<body>
+    <header>
+        <div id="topSlider" class="carousel slide top-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-info d-flex justify-content-center align-items-center">
+                        <img src="/assets/almond-flour.png" alt="">
+                        <p>Миндальная мука и натуральные ингредиенты</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-info d-flex justify-content-center align-items-center">
+                        <img src="/assets/always-fresh.png" alt="">
+                        <p>Всегда свежее</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#topSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#topSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="first-menu menu-bar d-flex justify-content-between align-items-center">
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="burger-menu-mobile" id="burger-menu-mobile">
+                <div class="burger-line-mobile"></div>
+                <div class="burger-line-mobile"></div>
+                <div class="burger-line-mobile"></div>
+            </div>
+            <img src="/assets/mobile-logo.png" alt="" class="first-menu__mobile-logo">
+            <div class="mobile__shoping-cart">
+                <img src="/assets/bag-icon.png" alt="">
+            </div>
+            <nav class="tablet-menu" id="tablet-menu">
+                <button id="close-tablet-menu" class="close-tablet-menu">&times;</button>
+                <a href="#">Гарантия свежести</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Оптовые поставки</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <nav class="mobile-menu" id="mobile-menu">
+                <button id="close-mobile-menu" class="close-mobile-menu">&times;</button>
+                <div class="mobile-menu__address">
+                    <img src="/assets/location-icon.png" alt="">
+                    <a href="#">Санкт-Петербург</a>
+                </div>
+                <a href="" class="d-flex align-items-center justify-content-center mobile-menu__sweet-days">
+                    <p>СЛАДКИЕ ДНИ</p>
+                    <img src="/assets/discount-icon.png" alt="" class="mobile-menu__discount-icon">
+                </a>
+                <a href="">ПОДАРОЧНЫЕ НАБОРЫ</a>
+                <a href="">СОЗДАТЬ НАБОР</a>
+                <a href="">СОЗДАТЬ ДИЗАЙН</a>
+                <a href="">КОМПАНИЯМ</a>
+                <a href="">ВЕСЬ КАТАЛОГ</a>
+                <a href="#">Гарантия свежести</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Оптовые поставки</a>
+                <a href="#">Контакты</a>
+                <div class="mobile-menu-phone">
+                    <img src="/assets/phone-icon.png" alt="">
+                    <a href="#">8 812 309-82-88</a>
+                </div>
+                <div class="smm">
+                    <a href="https://t.me">
+                        <img src="/assets/tg.png" alt="">
+                    </a>
+                    <a href="https://vk.com">
+                        <img src="/assets/vk.png" alt="">
+                    </a>
+                    <a href="https://ok.ru">
+                        <img src="/assets/ok.png" alt="">
+                    </a>
+                </div>
+            </nav>
+            <div class="left-menu">
+                <a href="#">Гарантия свежести</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Оптовые поставки</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="right-menu d-flex justify-content-center align-items-center">
+                <div class="right-menu-items">
+                    <img src="/assets/location-icon.png" alt="">
+                    <a href="#">Санкт-Петербург</a>
+                </div>
+                <div class="right-menu-items">
+                    <img src="/assets/phone-icon.png" alt="">
+                    <a href="#">8 812 309-82-88</a>
+                </div>
+                <div class="right-menu-items shoping-cart">
+                    <img src="/assets/bag-icon.png" alt="">
+                    <a href="#">Корзина (4 товара)</a>
+                </div>
+                <div class="smm">
+                    <a href="https://t.me">
+                        <img src="/assets/tg.png" alt="">
+                    </a>
+                    <a href="https://vk.com">
+                        <img src="/assets/vk.png" alt="">
+                    </a>
+                    <a href="https://ok.ru">
+                        <img src="/assets/ok.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="second-menu menu-bar d-flex justify-content-start align-items-center">
+                <a href="" class="d-flex flex-row align-items-center gap-1">
+                    <p>СЛАДКИЕ ДНИ</p>
+                    <img src="/assets/discount-icon.png" alt="" class="second-menu__discount-icon">
+                </a>
+                <a href="">ПОДАРОЧНЫЕ НАБОРЫ</a>
+                <a href="">СОЗДАТЬ НАБОР</a>
+                <img src="/assets/logo.png" class="second-menu__logo" alt="">
+                <a href="">СОЗДАТЬ ДИЗАЙН</a>
+                <a href="">КОМПАНИЯМ</a>
+                <a href="">ВЕСЬ КАТАЛОГ</a>
+        </div>
+    </header>
+    <main>
+        <div class="main__left-part">
+            <img src="/assets/main-image.png" alt="">
+        </div>
+        <div class="main__right-part">
+            <h1 class="main__right-part__shop-name">MACARONSHOP</h1>
+            <p class="main__right-part__line-text">since 2013</p>
+            <p class="main__right-part__shop-slogan">НАСТОЯЩЯЯ ЛЮБОВЬ</p>
+            <p class="main__right-part__shop-info">Пирожные макарон и другие десерты из натуральных ингредиентов, приготовленные с любовью </p>
+        </div>
+    </main>
+    <div class="second-screen">
+        <div class="second-screen__ready-sets">
+            <img src="/assets/ready-set.png" alt="" class="second-screen__img">
+            <a href="" class="second-screen__sets-link">
+                <p>Готовые наборы</p>
+                <img src="/assets/arrow.png" alt="" class="second-screen__img-arrow">
+            </a>
+            <h3>Готовые наборы со скидкой. Вы можете подобрать набор на подходящий случай.</h3>
+        </div>
+        <div class="second-screen__make-your-own-set">
+            <img src="/assets/make-your-own-set.png" alt="" class="second-screen__img">
+            <a href="" class="second-screen__sets-link">
+                <p>Собрать свой набор</p>
+                <img src="/assets/arrow.png" alt="" class="second-screen__img-arrow">
+            </a>
+            <h3>Выбрать количество макарун, и выбрать вкусы</h3>
+        </div>
+        <div class="second-screen__personal-print-set">
+            <img src="/assets/personal-print.png" alt="" class="second-screen__img">
+            <a href="" class="second-screen__sets-link">
+                <p>Набор с индивидуальной печатью</p>
+                <img src="/assets/arrow.png" alt="" class="second-screen__img-arrow">
+            </a>
+            <h3>Собрать набор макарон с уникальным дизайном.</h3>
+        </div>
+        <div class="second-screen__wedding-sets">
+            <img src="/assets/wedding-sets.png" alt="" class="second-screen__img">
+            <a href="" class="second-screen__sets-link">
+                <p>Свадебные предложения</p>
+                <img src="/assets/arrow.png" alt="" class="second-screen__img-arrow">
+            </a>
+            <h3>Нежные пирожные макаронс с разными вкусами для украшения вашего свадебного торжества</h3>
+        </div>
+        <div class="second-screen__corporate-sets">
+            <img src="/assets/corporate-sets.png" alt="" class="second-screen__img">
+            <a href="" class="second-screen__sets-link">
+                <p>Корпоративные подарки</p>
+                <img src="/assets/arrow.png" alt="" class="second-screen__img-arrow">
+            </a>
+            <h3>От 85 руб за шт. С уникальным дизайном. Приятный комплимент для коллег и партнеров</h3>
+        </div>
+        <div class="second-screen__wholesale-sets">
+            <img src="/assets/wholesale-sets.png" alt="" class="second-screen__img">
+            <a href="" class="second-screen__sets-link">
+                <p>Оптовые поставки</p>
+                <img src="/assets/arrow.png" alt="" class="second-screen__img-arrow">
+            </a>
+            <h3>Предложение для кофеен, кафе, отелей и т.д. Посмотрите условия сотрудничества и отзывы.</h3>
+        </div>
+    </div>
+    <h2 class="promotion">Акции</h2>
+    <div class="promotion-mobile">
+        <img src="/assets/promo-mobile.png" alt="" class="promotion-mobile__img">
+        <p class="promotion-mobile__title">НОВИНКА</p>
+        <p class="promotion-mobile__description">Наборы на 40 штук от 3600 ₽</p>
+    </div>
+    <div class="third-screen">
+        <div class="third-screen__item third-screen__item__blue">
+            <img src="/assets/second-screen__img1.png" alt="" class="third-screen__img-background">
+            <img src="/assets/label-freederlivery.png" alt="" class="third-screen__label">
+            <p>По СПб в районе КАД – от 3000₽ По МСК – от 5000₽</p>
+        </div>
+        <div class="third-screen__item">
+            <img src="/assets/second-screen__img2.png" alt="" class="third-screen__img-background">
+            <img src="/assets/label-new.png" alt="" class="third-screen__label">
+            <p>Шоколадное пирожное картошка на основе бисквита!</p>
+        </div>
+        <div class="third-screen__item">
+            <img src="/assets/second-screen__img3.png" alt="" class="third-screen__img-background">
+            <img src="/assets/label-new.png" alt="" class="third-screen__label">
+            <p>Аппетитные конфеты на основе миндального печенья и крема</p>
+        </div>
+        <div class="third-screen__item">
+            <img src="/assets/second-screen__img4.png" alt="" class="third-screen__img-background">
+            <img src="/assets/label-sweetnew.png" alt="" class="third-screen__label">
+            <p>Карамель на палочке из натуральных ингредиентов</p>
+        </div>
+    </div>
+    <div class="fourth-screen">
+        <h2>Ближайшие праздники</h2>
+        <div class="fourth-screen__wrapper">
+                <div class="fourth-screen__dotted-line"></div>
+                <div class="fourth-screen__item">
+                    <img src="/assets/macaron-birthday.png" alt="">
+                    <img src="/assets/birthday-hat.png" alt="" class="fourth-screen__birthday-hat">
+                    <p>Скоро День рождения близкого человека</p>
+                </div>
+                <div class="fourth-screen__item">
+                    <img src="/assets/macaron-blu.png" alt="">
+                    <p>1 января Новый Год 2021</p>
+                </div>
+                <div class="fourth-screen__item">
+                    <img src="/assets/macaron-pink.png" alt="">
+                    <p>14 февраля День Святого Валентина</p>
+                </div>
+                <div class="fourth-screen__item fourth-screen__item__desktop">
+                    <img src="/assets/macaron-yellow.png" alt="">
+                    <p>23 февраля День Защитника Отечества</p>
+                </div>
+                <div class="fourth-screen__item fourth-screen__item__desktop">
+                    <img src="/assets/macaron-blu.png" alt="">
+                    <p>8 марта Международный Женский День</p>
+                </div>
+                <div class="fourth-screen__item fourth-screen__item__desktop">
+                    <img src="/assets/macaron-pink.png" alt="">
+                    <p>9 марта День Сурка</p>
+                </div>
+            </div>
+        </div>
+        <div class="fifth-screen">
+            <h2>Популярные наборы</h2>
+            <div class="fifth-screen__wrapper">
+                <div class="fifth-screen__wrapper__item">
+                    <img src="/assets/fifth-screen1.png" alt="" class="fifth-screen__wrapper__item__img">
+                    <h3>Сердце</h3>
+                    <p class="fifth-screen__wrapper__item-description">24 штуки в коробке в виде сердца. Ассорти из 6 вкусов</p>
+                    <div class="add-to-cart">
+                        <p class="add-to-cart__price">2800 руб</p>
+                        <button class="add-to-cart__btn">
+                            <img src="/assets/bag-icon.png" alt="">
+                            <span>В корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="fifth-screen__wrapper__item">
+                    <img src="/assets/fifth-screen2.png" alt="" class="fifth-screen__wrapper__item__img">
+                    <h3>Красота спасёт мир </h3>
+                    <p class="fifth-screen__wrapper__item-description">Набор 16 шт. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</p>
+                    <div class="add-to-cart">
+                        <p class="add-to-cart__price">2800 руб</p>
+                        <button class="add-to-cart__btn">
+                            <img src="/assets/bag-icon.png" alt="">
+                            <span>В корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="fifth-screen__wrapper__item">
+                    <img src="/assets/fifth-screen3.png" alt="" class="fifth-screen__wrapper__item__img">
+                    <h3>Круглый набор</h3>
+                    <p class="fifth-screen__wrapper__item-description">40 макаронс в круглой коробке с персональной надписью</p>
+                    <div class="add-to-cart">
+                        <p class="add-to-cart__price">2800 руб</p>
+                        <button class="add-to-cart__btn">
+                            <img src="/assets/bag-icon.png" alt="">
+                            <span>В корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="fifth-screen__wrapper__item">
+                    <img src="/assets/fifth-screen4.png" alt="" class="fifth-screen__wrapper__item__img">
+                    <h3>Набор на 9</h3>
+                    <p class="fifth-screen__wrapper__item-description">Набор из 9 штук в квадратной коробке. Вкусы: шоколад, фисташка, вишня</p>
+                    <div class="add-to-cart">
+                        <p class="add-to-cart__price">2800 руб</p>
+                        <button class="add-to-cart__btn">
+                            <img src="/assets/bag-icon.png" alt="">
+                            <span>В корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="fifth-screen__wrapper__item">
+                    <img src="/assets/fifth-screen5.png" alt="" class="fifth-screen__wrapper__item__img">
+                    <h3>Набор на 16</h3>
+                    <p class="fifth-screen__wrapper__item-description">Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад</p>
+                    <div class="add-to-cart">
+                        <p class="add-to-cart__price">2800 руб</p>
+                        <button class="add-to-cart__btn">
+                            <img src="/assets/bag-icon.png" alt="">
+                            <span>В корзину</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="fifth-screen__wrapper__item">
+                    <img src="/assets/fifth-screen6.png" alt="" class="fifth-screen__wrapper__item__img">
+                    <h3>Сердце</h3>
+                    <p class="fifth-screen__wrapper__item-description">24 штуки в коробке в виде сердца. Ассорти из 6 вкусов</p>
+                    <div class="add-to-cart">
+                        <p class="add-to-cart__price">2800 руб</p>
+                        <button class="add-to-cart__btn">
+                            <img src="/assets/bag-icon.png" alt="">
+                            <span>В корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="all-sets-link">
+                <button >Все праздничные наборы</button>
+            </div>
+        </div>
+        <div class="six-screen">
+            <h2>Новости</h2>
+            <div class="six-screen__wrapper">
+                <div class="six-screen__wrapper__item">
+                    <img src="/assets/news-img1.png" alt="">
+                    <p class="six-screen__wrapper__item-data">25.10.2023</p>
+                    <p class="six-screen__wrapper__item-title">Скоро главный праздник весны!</p>
+                    <p class="six-screen__wrapper__item-descrtiption">Девушки любят, когда вкусно, красиво и натурально. Смотрите больше наборов с десертами ручной работы</p>
+                </div>
+                <div class="six-screen__wrapper__item">
+                    <img src="/assets/news-img2.png" alt="">
+                    <p class="six-screen__wrapper__item-data">25.10.2023</p>
+                    <p class="six-screen__wrapper__item-title">Конкурс на 23 февраля!</p>
+                    <p class="six-screen__wrapper__item-descrtiption">День Защитника Отечества уже совсем скоро! Порадуйте своего сладкоежку с помощью аппетитных наборов от МакаронШоп</p>
+                </div>
+                <div class="six-screen__wrapper__item six-screen__wrapper-hide-in-mobile">
+                    <img src="/assets/news-img3.png" alt="">
+                    <p class="six-screen__wrapper__item-data">11.02.2023</p>
+                    <p class="six-screen__wrapper__item-title">Экспресс-конкурс ко дню Святого Валентина</p>
+                    <p class="six-screen__wrapper__item-descrtiption">Подарок уже через 2 дня. День всех влюблённых не за горами. Расскажи о своих чувствах с помощью сладкой валентинки от МакаронШоп</p>
+                </div>
+            </div>
+            <div class="six-screen__all-news">
+                    <button class="six-screen__all-news__btn">
+                    <span>Все новости</span>
+                </button>
+            </div>
+        </div>
+    <footer>
+        <div class="footer-wrapper">
+            <img src="/assets/footer-img1.png" alt="" class="footer-img1">
+            <img src="/assets/footer-img2.png" alt="" class="footer-img2">
+            <img src="/assets/footer-img3.png" alt="" class="footer-img3">
+            <p class="footer__info">ИНФОРМАЦИЯ</p>
+            <p class="footer__catalog">КАТАЛОГ</p>
+            <p class="footer__for-business">ДЛЯ БИЗНЕСА</p>
+            <p class="footer__phone">+7 (812) 309 82 88</p>
+            <p class="footer__img-description1">Готовим вручную и с любовью</p>
+            <p class="footer__img-description2">Доставим в день заказа</p>
+            <p class="footer__img-description3"> 100% миндальная мука и натуральные ингредиенты</p>
+            <p class="footer__info__about">О компании</p>
+            <p class="footer__catalog__desserts">Каталог десертов</p>
+            <p class="footer__for-business__corporate-presents">Корпоративные подарки</p>
+            <p class="footer__working-hours">с 9:00 до 21:00</p>
+            <p class="footer__info__garantees">Гарантии вкуса и свежести</p>
+            <p class="footer__catalog__ready-sets">Готовые наборы</p>
+            <p class="footer__for-business__for-LLC">Для юридических лиц</p>
+            <p class="footer__info__about-delivery">Доставка и оплата</p>
+            <p class="footer__catalog__make-your-own">Собрать свой набор</p>
+            <p class="footer__for-business__wholesale">Оптовикам</p>
+            <p class="footer__address">© 2021 Макароншоп ООО "Квантум", Санкт-Петербург,  улица Маршала Тухачевского, дом 22 </p>
+            <p class="footer__info__contacts">Контакты</p>
+            <p class="footer__catalog__promo">Акции</p>
+            <div class="footer__SMM">
+                <a href="https://www.instagram.com/"><img src="/assets/smm-inst.png" alt="" > </a>
+                <a href=""><img src="/assets/smm-fb.png" alt=""></a>
+                <a href=""><img src="/assets/smm-vk.png" alt=""></a>
+            </div> 
+        </div>
+    </footer>
+
+
+
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
